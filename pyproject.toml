@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "neural-nets"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "neural_nets"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+plotly = "^5.15.0"
+numpy = "^1.24.3"
+pandas = "^2.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
