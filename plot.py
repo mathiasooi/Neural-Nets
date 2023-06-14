@@ -18,6 +18,7 @@ far = np.array(far)
 fig = go.Figure()
 fig.add_trace(go.Scatter(x=close[:, 0], y=close[:, 1],  mode="markers", marker_color="green"))
 fig.add_trace(go.Scatter(x=far[:, 0], y=far[:, 1],  mode="markers", marker_color="red"))
+fig.update_layout(autosize=False, width=1000, height=1000)
 fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=min(close[:, 0]), y0=min(close[:, 1]),
